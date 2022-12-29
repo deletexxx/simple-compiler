@@ -1,0 +1,29 @@
+S
+26		A	B	C	D	E	F	G	H	I	J	K	L	M	N	O	P	Q	R	S	T	U	V	W	X	Y	Z	
+26		!	&	(	)	*	+	,	-	/	;	<	=	>	c	d	e	f	i	j	m	n	o	w	{	|	}	
+A	8		c CA		d CA		f CA		i CA		j CA		o CA		w CA		} ~		
+B	5		c c>>i;		f f(dZ;G;Q){A}		j j(E){A}W		o o<<i;		w w(E){A}		
+C	7		c B		d X		f B		i R		j B		o B		w B		
+D	4		! !=		< <Y		= ==		> >Y		
+E	3		( HI		i HI		n HI		
+F	3		( (L)		i i		n n		
+G	3		( FDF		i FDF		n FDF		
+H	3		( GV		i GV		n GV		
+I	2		& &&E		) ~		
+J	2		, ,Z		; ~		
+K	3		, ~		; ~		= =L		
+L	3		( TM		i TM		n TM		
+M	5		) ~		+ +L		, ~		- -L		; ~		
+N	7		) ~		* *T		+ ~		, ~		- ~		/ /T		; ~		
+O	2		+ ++		- --		
+P	2		j j(E){A}W		{ {A}		
+Q	4		) ~		+ Oi		- Oi		i iO		
+R	1		i i=L;		
+S	1		d dm(){A}		
+T	3		( FN		i FN		n FN		
+U	1		i iK		
+V	3		& ~		) ~		| ||H		
+W	9		c ~		d ~		e eP		f ~		i ~		j ~		o ~		w ~		} ~		
+X	1		d dZ;		
+Y	4		( ~		= =		i ~		n ~		
+Z	1		i UJ		

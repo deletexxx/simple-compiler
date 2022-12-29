@@ -1,0 +1,89 @@
+栈			当前符号			栈操作
+#S			int			S->dm(){A}
+#}A{)(md			int			delete d
+#}A{)(m			main			delete m
+#}A{)(			(			delete (
+#}A{)			)			delete )
+#}A{			{			delete {
+#}A			int			A->CA
+#}AC			int			C->X
+#}AX			int			X->dZ;
+#}A;Zd			int			delete d
+#}A;Z			first			Z->UJ
+#}A;JU			first			U->iK
+#}A;JKi			first			delete i
+#}A;JK			=			K->=L
+#}A;JL=			=			delete =
+#}A;JL			1			L->TM
+#}A;JMT			1			T->FN
+#}A;JMNF			1			F->n
+#}A;JMNn			1			delete n
+#}A;JMN			;			N-> 
+#}A;JM			;			M-> 
+#}A;J			;			J-> 
+#}A;			;			delete ;
+#}A			int			A->CA
+#}AC			int			C->X
+#}AX			int			X->dZ;
+#}A;Zd			int			delete d
+#}A;Z			second			Z->UJ
+#}A;JU			second			U->iK
+#}A;JKi			second			delete i
+#}A;JK			=			K->=L
+#}A;JL=			=			delete =
+#}A;JL			first			L->TM
+#}A;JMT			first			T->FN
+#}A;JMNF			first			F->i
+#}A;JMNi			first			delete i
+#}A;JMN			*			N->*T
+#}A;JMT*			*			delete *
+#}A;JMT			(			T->FN
+#}A;JMNF			(			F->(L)
+#}A;JMN)L(			(			delete (
+#}A;JMN)L			5			L->TM
+#}A;JMN)MT			5			T->FN
+#}A;JMN)MNF			5			F->n
+#}A;JMN)MNn			5			delete n
+#}A;JMN)MN			+			N-> 
+#}A;JMN)M			+			M->+L
+#}A;JMN)L+			+			delete +
+#}A;JMN)L			2			L->TM
+#}A;JMN)MT			2			T->FN
+#}A;JMN)MNF			2			F->n
+#}A;JMN)MNn			2			delete n
+#}A;JMN)MN			)			N-> 
+#}A;JMN)M			)			M-> 
+#}A;JMN)			)			delete )
+#}A;JMN			;			N-> 
+#}A;JM			;			M-> 
+#}A;J			;			J-> 
+#}A;			;			delete ;
+#}A			float			A->CA
+#}AC			float			C->X
+#}AX			float			X->dZ;
+#}A;Zd			float			delete d
+#}A;Z			third			Z->UJ
+#}A;JU			third			U->iK
+#}A;JKi			third			delete i
+#}A;JK			=			K->=L
+#}A;JL=			=			delete =
+#}A;JL			6			L->TM
+#}A;JMT			6			T->FN
+#}A;JMNF			6			F->n
+#}A;JMNn			6			delete n
+#}A;JMN			/			N->/T
+#}A;JMT/			/			delete /
+#}A;JMT			2			T->FN
+#}A;JMNF			2			F->n
+#}A;JMNn			2			delete n
+#}A;JMN			+			N-> 
+#}A;JM			+			M->+L
+#}A;JL+			+			delete +
+#}A;JL			3			L->TM
+#}A;JMT			3			T->FN
+#}A;JMNF			3			F->n
+#}A;JMNn			3			delete n
+#}A;JMN			if			N->
+#}A;JM			if			M->
+#}A;J			if			J->
+#}A;			if			mismatch j

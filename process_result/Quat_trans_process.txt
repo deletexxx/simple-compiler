@@ -1,0 +1,106 @@
+栈			当前符号			栈操作			SEM动作及生成的四元式
+#S			int			S->"dm(){A}"			SEM=			
+#}A{)(md			int			delete d			SEM=			
+#}A{)(m			main			delete m			SEM=			
+#}A{)(			(			delete (			SEM=			
+#}A{)			)			delete )			SEM=			
+#}A{			{			delete {			SEM=			
+#}A			int			A->"CA"			SEM=			
+#}AC			int			C->"X"			SEM=			
+#}AX			int			X->"dZ;"			SEM=			
+#}A;Zd			int			delete d			SEM=			
+#}A;Z			first			Z->"UJ"			SEM=			
+#}A;JU			first			U->"iK"			SEM=			
+#}A;JKi			first			delete i			SEM=			
+#}A;JK			=			K->"1=L2"			SEM=			
+#}A;J2L=1			=						SEM=						PUSH(first)
+#}A;J2L=			=			delete =			SEM=first			
+#}A;J2L			1			L->"TM"			SEM=first			
+#}A;J2MT			1			T->"FN"			SEM=first			
+#}A;J2MNF			1			F->"n1"			SEM=first			
+#}A;J2MN1n			1			delete n			SEM=first			
+#}A;J2MN1			;						SEM=first						PUSH(1)
+#}A;J2MN			;			N->" "			SEM=first1			
+#}A;J2M			;			M->" "			SEM=first1			
+#}A;J2			;						SEM=first1						ASSI<=,	1,	_,	first	>
+#}A;J			;			J->" "			SEM=			
+#}A;			;			delete ;			SEM=			
+#}A			int			A->"CA"			SEM=			
+#}AC			int			C->"X"			SEM=			
+#}AX			int			X->"dZ;"			SEM=			
+#}A;Zd			int			delete d			SEM=			
+#}A;Z			second			Z->"UJ"			SEM=			
+#}A;JU			second			U->"iK"			SEM=			
+#}A;JKi			second			delete i			SEM=			
+#}A;JK			=			K->"1=L2"			SEM=			
+#}A;J2L=1			=						SEM=						PUSH(second)
+#}A;J2L=			=			delete =			SEM=second			
+#}A;J2L			first			L->"TM"			SEM=second			
+#}A;J2MT			first			T->"FN"			SEM=second			
+#}A;J2MNF			first			F->"i1"			SEM=second			
+#}A;J2MN1i			first			delete i			SEM=second			
+#}A;J2MN1			*						SEM=second						PUSH(first)
+#}A;J2MN			*			N->"*T0"			SEM=secondfirst			
+#}A;J2M0T*			*			delete *			SEM=secondfirst			
+#}A;J2M0T			(			T->"FN"			SEM=secondfirst			
+#}A;J2M0NF			(			F->"(L)"			SEM=secondfirst			
+#}A;J2M0N)L(			(			delete (			SEM=secondfirst			
+#}A;J2M0N)L			5			L->"TM"			SEM=secondfirst			
+#}A;J2M0N)MT			5			T->"FN"			SEM=secondfirst			
+#}A;J2M0N)MNF			5			F->"n1"			SEM=secondfirst			
+#}A;J2M0N)MN1n			5			delete n			SEM=secondfirst			
+#}A;J2M0N)MN1			+						SEM=secondfirst						PUSH(5)
+#}A;J2M0N)MN			+			N->" "			SEM=secondfirst5			
+#}A;J2M0N)M			+			M->"+L0"			SEM=secondfirst5			
+#}A;J2M0N)0L+			+			delete +			SEM=secondfirst5			
+#}A;J2M0N)0L			2			L->"TM"			SEM=secondfirst5			
+#}A;J2M0N)0MT			2			T->"FN"			SEM=secondfirst5			
+#}A;J2M0N)0MNF			2			F->"n1"			SEM=secondfirst5			
+#}A;J2M0N)0MN1n			2			delete n			SEM=secondfirst5			
+#}A;J2M0N)0MN1			)						SEM=secondfirst5						PUSH(2)
+#}A;J2M0N)0MN			)			N->" "			SEM=secondfirst52			
+#}A;J2M0N)0M			)			M->" "			SEM=secondfirst52			
+#}A;J2M0N)0			)						SEM=secondfirst52						GEQ(+)<+,	5,	2,	t	>
+#}A;J2M0N)			)			delete )			SEM=secondfirstt			
+#}A;J2M0N			;			N->" "			SEM=secondfirstt			
+#}A;J2M0			;						SEM=secondfirstt						GEQ(*)<*,	first,	t,	t1	>
+#}A;J2M			;			M->" "			SEM=secondt1			
+#}A;J2			;						SEM=secondt1						ASSI<=,	t1,	_,	second	>
+#}A;J			;			J->" "			SEM=			
+#}A;			;			delete ;			SEM=			
+#}A			float			A->"CA"			SEM=			
+#}AC			float			C->"X"			SEM=			
+#}AX			float			X->"dZ;"			SEM=			
+#}A;Zd			float			delete d			SEM=			
+#}A;Z			third			Z->"UJ"			SEM=			
+#}A;JU			third			U->"iK"			SEM=			
+#}A;JKi			third			delete i			SEM=			
+#}A;JK			=			K->"1=L2"			SEM=			
+#}A;J2L=1			=						SEM=						PUSH(third)
+#}A;J2L=			=			delete =			SEM=third			
+#}A;J2L			6			L->"TM"			SEM=third			
+#}A;J2MT			6			T->"FN"			SEM=third			
+#}A;J2MNF			6			F->"n1"			SEM=third			
+#}A;J2MN1n			6			delete n			SEM=third			
+#}A;J2MN1			/						SEM=third						PUSH(6)
+#}A;J2MN			/			N->"/T0"			SEM=third6			
+#}A;J2M0T/			/			delete /			SEM=third6			
+#}A;J2M0T			2			T->"FN"			SEM=third6			
+#}A;J2M0NF			2			F->"n1"			SEM=third6			
+#}A;J2M0N1n			2			delete n			SEM=third6			
+#}A;J2M0N1			+						SEM=third6						PUSH(2)
+#}A;J2M0N			+			N->" "			SEM=third62			
+#}A;J2M0			+						SEM=third62						GEQ(/)</,	6,	2,	t2	>
+#}A;J2M			+			M->"+L0"			SEM=thirdt2			
+#}A;J20L+			+			delete +			SEM=thirdt2			
+#}A;J20L			3			L->"TM"			SEM=thirdt2			
+#}A;J20MT			3			T->"FN"			SEM=thirdt2			
+#}A;J20MNF			3			F->"n1"			SEM=thirdt2			
+#}A;J20MN1n			3			delete n			SEM=thirdt2			
+#}A;J20MN1			if						SEM=thirdt2						PUSH(3)
+#}A;J20MN			if			N->""			SEM=thirdt23			
+#}A;J20M			if			M->""			SEM=thirdt23			
+#}A;J20			if						SEM=thirdt23						GEQ(+)<+,	t2,	3,	t3	>
+#}A;J2			if						SEM=thirdt3						ASSI<=,	t3,	_,	third	>
+#}A;J			if			J->""			SEM=			
+#}A;			if			mismatch j

@@ -1,0 +1,33 @@
+SYNBL
+id		name		TYPE(id)		CAT		ADDR		is_temp_var
+0		first		type_table:0		v		4		0
+1		second		type_table:1		v		4		0
+2		third		type_table:2		v		4		0
+3		four		type_table:3		v		4		0
+4		five		type_table:4		v		4		0
+5		t		type_table:5		v		4		1
+6		t1		type_table:6		v		4		1
+7		t2		type_table:7		v		4		1
+8		t3		type_table:8		v		4		1
+
+TYPEL
+id		TYPEL		TPOINT
+0		i		NULL
+1		i		NULL
+2		f		NULL
+3		i		NULL
+4		i		NULL
+5		i		NULL
+6		i		NULL
+7		i		NULL
+8		i		NULL
+
+AINFL
+id		LOW		UP		CTP		len
+
+RINF
+id		name		off		TPOINT
+
+PEINFL
+id		level		off		FN		entry		PARAM
+0		0		0		0		0		NULL
